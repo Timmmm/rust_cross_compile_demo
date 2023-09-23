@@ -19,7 +19,6 @@ jobs:
     - name: Install Linux and Windows Cross Compilers
       run: sudo apt-get install --yes --no-install-recommends musl-tools gcc-mingw-w64-x86-64-win32
 
-    # This compiles Clang but it should cache the results for future builds.
     - name: Set up MacOS Cross Compiler
       uses: Timmmm/setup-osxcross@v2
       with:
